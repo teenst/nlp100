@@ -4,8 +4,8 @@ import csv
 
 D = set()
 for row in csv.reader(sys.stdin):
-    s1 = unicode(''.join((row[6], row[7])))
-    s2 = unicode(row[8])
+    s1 = unicode(''.join((row[6], row[7])),'shift-jis')
+    s2 = unicode(row[8],'shift-jis')
     if s2 == u'以下に掲載がない場合':
         continue
     s2s = s2.split(u'、')
@@ -16,4 +16,4 @@ for row in csv.reader(sys.stdin):
         D.add((s1, s))
 
 for s1, s2 in D:
-    print '\t'.join((s1, s2))
+    print '\t'.join((s1, s2)).encode('utf-8')
