@@ -1,0 +1,7 @@
+source :rubygems
+source "http://rubygems.org"
+
+gem "twitter"
+gem "tweetstream"
+gem "pry"
+gem "pit"
