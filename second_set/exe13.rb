@@ -1,7 +1,6 @@
 #!/usr/env/bin ruby
 # -*- coding: utf-8 -*-
 
-#(11) 「拡散希望」という文字列を含むツイートを抽出せよ．
 
 require "pp"
 
